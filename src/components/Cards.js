@@ -11,13 +11,13 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/Kneeboarding.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
+              text='Kneeboarding'
               label='Adventure'
               path='/watersport-rentals-lessons'
             />
             <CardItem
               src='images/Jet-Ski-Group.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
+              text='Jet ski'
               label='Adventure'
               path='/watersport-rentals-lessons'
             />
@@ -25,19 +25,19 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/Jet-Ski-1.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+              text='More jet ski'
               label='Mystery'
               path='/watersport-rentals-lessons'
             />
             <CardItem
               src='images/Group-with-Raft.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
+              text='Lake toys'
               label='Adventure'
               path='/watersport-rentals-lessons'
             />
             <CardItem
               src='images/Jet-Ski-Group.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
+              text='More jet ski'
               label='Adrenaline'
               path='/watersport-rentals-lessons'
             />
