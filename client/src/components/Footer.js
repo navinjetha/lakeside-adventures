@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
+// import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -28,20 +28,17 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <h2>Terms and Conditions</h2>
+            <Link to='/sign-up'>Cancellation policy</Link>
+            <Link to='/'>Privacy statement</Link>
+            
           </div>
           <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
+            <h2>Contact Us</h2>         
+            <Link to='/'>phone number goes here</Link>
+            <Link to='/'>Email address goes here</Link>
             {/* <Link to='/'>Destinations</Link> */}
-            <Link to='/'>Sponsorships</Link>
-          </div>
+            </div>
         </div>
         <div className='footer-link-wrapper'>
           {/* <div class='footer-link-items'>
@@ -52,11 +49,11 @@ function Footer() {
             <Link to='/'>Influencer</Link>
           </div> */}
           <div class='footer-link-items'>
-            <h2>Social Media</h2>
+            {/* <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='/'>Twitter</Link> */}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.footer-subscription {
+/* .footer-subscription {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@
 .footer-subscription-text {
   margin-bottom: 24px;
   font-size: 20px;
-}
+} */
 
 .footer-input {
   padding: 8px 20px;
@@ -54,6 +54,7 @@
 
 .footer-link-wrapper {
   display: flex;
+  
 }
 
 .footer-link-items {
@@ -64,6 +65,7 @@
   text-align: left;
   width: 160px;
   box-sizing: border-box;
+  justify-content: center;
 }
 
 .footer-link-items h2 {
