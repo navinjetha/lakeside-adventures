@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.about,
+.watersport-rentals-lessons,
+.adventure-packages,
+.summer-camp,
+.boattours-watertaxi,
+.booking,
+.sign-up,
+.cart {
+  display: flow-root;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.about {
+  /* background-image: url('/images/img-1.jpg'); */
+  text-align: center;
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: blue;
+  font-size: 100px;
+}
+.watersport-rentals-lessons {
+  background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.adventure-packages {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.summer-camp {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.boattours-watertaxi {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.booking {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.cart {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
