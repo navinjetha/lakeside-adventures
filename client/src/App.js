@@ -10,7 +10,7 @@ import SummerCamp from './components/pages/SummerCamp';
 import BoatToursAndWaterTaxi from './components/pages/BoatToursAndWaterTaxi';
 import Booking from './components/pages/Booking';
 import SignUp from './components/pages/SignUp';
-import Cart from './components/pages/Cart';
+import Cart from './components/pages/Cart'
 
 
 function App() {
@@ -28,8 +28,9 @@ function App() {
           <Route path='/booking' component={Booking} />
           <Route path='/sign-up' component={SignUp} />
           <Route path='/cart' component={Cart} />
+  );
 
-  
+
         </Switch>
       </Router>
     </>

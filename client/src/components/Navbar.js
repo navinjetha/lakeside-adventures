@@ -96,7 +96,7 @@ function Navbar() {
             </li> */}
             <li>
               <Link
-                to='/cart'
+                to='/Cart'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >

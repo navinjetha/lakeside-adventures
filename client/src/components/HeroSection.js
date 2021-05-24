@@ -2,12 +2,12 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <img src='/images/patrik-velich-GRSxyDKtlSM-unsplash.jpg' alt="there is an image here not being displayed" autoPlay loop muted />
+      <img src='./images/sagar-thakurdesai-iNaYUA25so0-unsplash.jpg' alt=" " autoPlay loop muted />
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>

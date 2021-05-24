@@ -17,12 +17,12 @@ const productSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-
     imageUrl: {
-        data: Buffer, 
-        contentType: String,
+        type: String, 
+        required: true,
     }
 })
+
 
 const Product = mongoose.model('product',productSchema)
 

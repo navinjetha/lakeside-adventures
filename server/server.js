@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
     res.json({message: "API running..."})
 })
 
-app.use("api/products", productRoutes);
+app.use("/api/products", productRoutes);
 
 
 const port = process.env.PORT || 5000;
