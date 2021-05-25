@@ -18,7 +18,11 @@
   .cartItem__name:hover {
     color: #dd219e;
   }
-  
+
+  .cartitem__image {
+    object-fit: contain;
+    position: unset;
+  }
   .cartItem__select {
     padding: 10px 17px;
   }
