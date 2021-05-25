@@ -1,6 +1,20 @@
 import React from 'react';
 import '../../App.css';
+import Cards from '../Cards';
+import MyPricingTable from '../MyPricingTable';
 
-export default function Services() {
-  return <h1 className='watersport-rentals-lessons'>Watersport Rentals & Lessons</h1>;
+
+function Home() {
+  return (
+    <>      
+      {/* <Cards /> */}
+      <MyPricingTable />
+           
+    </>
+  );
 }
+
+
+
+export default Home;
+
