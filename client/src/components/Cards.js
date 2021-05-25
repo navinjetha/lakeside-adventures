@@ -12,13 +12,13 @@ function Cards() {
             <CardItem
               src='images/Kneeboarding.jpg'
               text='Click and Experience Our Jaw Dropping Adventure Packages!'
-              label='Adventure'
+              label='Kneeboarding'
               path='/watersport-rentals-lessons'
             />
             <CardItem
               src='./images/Joanne-Surf-Smile.jpg'
               text='Click and Experience Our EPIC Watersports!'
-              label='Adventure'
+              label='Wake Surfing'
               path='/watersport-rentals-lessons'
             />
           </ul>
@@ -27,19 +27,19 @@ function Cards() {
               src='images//Girl-Tubing-moc.jpg'
               text='Click and Rent Our Water Sport Equipment and Have a Blast!'
               label='Adventure'
-              label='Mystery'
+              label='Tubing'
               path='/watersport-rentals-lessons'
             />
             <CardItem
               src='images/Group-with-Raft.jpg'
               text='Click and Experience Our Summer Camps'
-              label='Adventure'
+              label='Rafting'
               path='/watersport-rentals-lessons'
             />
             <CardItem
               src='images/Jet-Ski-Group.jpg'
               text='Fun and Exciting Water Sport Lessons'
-              label='Adrenaline'
+              label='Jet Skis'
               path='/watersport-rentals-lessons'
             />
           </ul>
