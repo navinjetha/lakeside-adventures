@@ -111,8 +111,8 @@ function Navbar() {
               >
                 Booking
               </Link>
-            </li> 
-            <li>
+            </li>
+            <li> 
               <Link
                 to='/Cart'
                 className='nav-links'

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route, Link, useHistory, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
 import About from './components/pages/About';
 import WatersportRentalsAndLessons from './components/pages/WatersportRentalsAndLessons';
 import AdventurePackages from './components/pages/AdventurePackages';
@@ -71,14 +71,7 @@ function App() {
           {/* <Route path='/sign-up' component={SignUp} /> */}
           <Route path='/cart' component={Cart} />
           <Route exact path = "/login"><LoginForm  signIn={signIn} error={error}/></Route>
-            <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route>
-            {/* <Route path='/welcome'> 
-              <div className="welcome">
-                <h2>Welcome to Shuswap</h2>
-                <button onClick={logout}>Logout</button>
-              </div>
-            </Route> */}
-  
+            <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route>  
         </Switch>
       </Router>
     </>
