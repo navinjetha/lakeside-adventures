@@ -58,7 +58,7 @@ function Navbar() {
                 Watersport Rentals & Lessons
               </Link>
             </li>
-            <li className='nav-item'>
+             {/* <li className='nav-item'>
               <Link
                 to='/adventure-packages'
                 className='nav-links'
@@ -84,8 +84,8 @@ function Navbar() {
               >
                 Boat Tours/Water Taxi
               </Link>
-            </li>
-            {/* <li className='nav-item'>
+            </li> */}
+            <li className='nav-item'>
               <Link
                 to='/booking'
                 className='nav-links'
@@ -93,7 +93,7 @@ function Navbar() {
               >
                 Booking
               </Link>
-            </li> */}
+            </li> 
             <li>
               <Link
                 to='/Cart'
