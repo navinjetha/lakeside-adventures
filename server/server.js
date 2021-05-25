@@ -33,7 +33,7 @@ app.get("/", [authJwt.verifyToken], (req, res) => {
 // routes
 require("./routes/auth.routes")(app);
 
-app.use("api/products", productRoutes);
+app.use("/api/products", productRoutes);
 
 
 const port = process.env.PORT || 5000;

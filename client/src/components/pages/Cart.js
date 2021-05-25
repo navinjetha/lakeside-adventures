@@ -1,6 +1,18 @@
 import React from 'react';
-import '../../App.css';
+// import ReactDOM from 'react-dom';
+import { Provider } from "react-redux";
+import store from '../../shop/redux/store';
+import CartApp from '../../shop/CartApp';
 
 export default function Cart() {
-  return <h1 className='cart'>CART</h1>;
+  return (
+    <div>
+      <Provider store={store}>
+      <React.StrictMode>
+        <CartApp />
+      </React.StrictMode>
+      </Provider>,
+      
+    </div>
+  )
 }
