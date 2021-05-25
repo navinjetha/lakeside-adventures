@@ -48,7 +48,7 @@ function App() {
     ).then(
       response => {
         // history.push("/welcome")
-        history.push("/cart")
+        history.push("/login")
       },
       error => {
           setError(error.response.data.message)    
