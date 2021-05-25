@@ -10,16 +10,16 @@ import CartScreen from './screens/CartScreen'
 
 // Components
 import CartNavbar from './components/CartNavbar'
-import Backdrop from './components/Backdrop'
-import SideDrawer from './components/SideDrawer'
+// import Backdrop from './components/Backdrop'
+// import SideDrawer from './components/SideDrawer'
 
 function CartApp() {
   const [sideToggle, setSidetoggle] = useState(false)
   return (
     <Router>
     <CartNavbar click={() => setSidetoggle(true)}/>
-    <SideDrawer show={sideToggle} click={() => setSidetoggle(false)}/>
-    <Backdrop show={sideToggle} click={() => setSidetoggle(false)}/> */}
+    {/* <SideDrawer show={sideToggle} click={() => setSidetoggle(false)}/> */}
+    {/* <Backdrop show={sideToggle} click={() => setSidetoggle(false)}/> */} */}
       <main className="catapp">
         <Switch>
           <Route exact path='/' component={HomeScreen} />

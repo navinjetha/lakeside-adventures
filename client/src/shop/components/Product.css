@@ -52,7 +52,7 @@
     color: #f4f4f4;
   }
   
-  @media (max-width: 1232px) {
+  /* @media (max-width: 1232px) {
     .product {
       width: 360px;
     }
@@ -105,4 +105,4 @@
       width: 300px;
     }
   }
-  
+   */

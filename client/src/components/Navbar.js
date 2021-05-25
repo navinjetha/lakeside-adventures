@@ -42,8 +42,6 @@ function Navbar() {
     window.location.reload();
   }
 
-
-
   return (
     <>
       <nav className='navbar'>
@@ -120,7 +118,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Shop
+                Cart
               </Link>
             </li>
           </ul>

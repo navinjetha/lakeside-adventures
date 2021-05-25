@@ -23,7 +23,7 @@ const ProductScreen = ({ match, history }) => {
   };
 
   return (
-    <div className="productscreen">
+    <div>
       {loading ? (
         <h2>Loading...</h2>
       ) : error ? (
@@ -32,7 +32,7 @@ const ProductScreen = ({ match, history }) => {
         <>
           <div className="productscreen__left">
             <div className="left__image">
-              <img src={product.imageUrl} alt={product.name}  />
+              <img src={product.imageUrl} alt={product.name} margin="1rem" />
 
             </div>
             <div className="left__info">
