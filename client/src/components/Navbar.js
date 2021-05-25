@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowseRouter as Router, useHistory } from 'react-router-dom';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import AuthService from "../services/auth.service";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -9,6 +11,8 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  let user = AuthService.getCurrentUser()
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -23,6 +27,22 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
+
+  const history = useHistory();
+
+  const onClickLogin = () => {
+    history.push("/login");
+    window.location.reload();
+  }
+
+  const onClickLogout = () => {
+    user = null;
+    AuthService.logout()
+    history.push("/");
+    window.location.reload();
+  }
+
+
 
   return (
     <>
@@ -104,7 +124,8 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && !user && <Button buttonStyle='btn--outline' onClick={onClickLogin}>SIGN IN</Button>}
+          {button && user && <Button buttonStyle='btn--outline' onClick={onClickLogout}>LOG OUT</Button>}
         </div>
       </nav>
     </>
