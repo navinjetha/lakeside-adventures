@@ -11,7 +11,7 @@ function HeroSection() {
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
-        <Link to='/sign-up' className='btn-mobile'>
+        {/* <Link to='/sign-up' className='btn-mobile'>
           <Button
             className='btns'
             buttonStyle='btn--outline'
@@ -20,7 +20,7 @@ function HeroSection() {
 
             GET STARTED
         </Button>
-        </Link>
+        </Link> */}
         <Link to='/About' className='btn-mobile'>
         <Button 
           className='btns'
