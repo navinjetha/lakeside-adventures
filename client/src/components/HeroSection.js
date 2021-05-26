@@ -11,7 +11,7 @@ function HeroSection() {
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
-        {/* <Link to='/sign-up' className='btn-mobile'>
+        <Link to='/Cart' className='mobile'>
           <Button
             className='btns'
             buttonStyle='btn--outline'
@@ -20,19 +20,19 @@ function HeroSection() {
 
             GET STARTED
         </Button>
-        </Link> */}
+        </Link>
         <Link to='/About' className='btn-mobile'>
-        <Button 
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-        >
-        {/* onClick={console.log('hey')} src="https://www.youtube.com/embed/s1UBEYBQ4OY" async="" */}
-        {/* <script src="https://www.youtube.com/s/desktop/c20c1e6c/jsbin/spf.vflset/spf.js" nonce="WnmGmZI14YHZRTruttRClA" class="js-httpswwwyoutubecomsdesktopc20c1e6cjsbinspfvflsetspfjs"></script> */}
-      
-          WATCH TRAILER <i className='far fa-play-circle' 
-           />
-        </Button>
+          <Button
+            className='btns'
+            buttonStyle='btn--primary'
+            buttonSize='btn--large'
+          >
+            {/* onClick={console.log('hey')} src="https://www.youtube.com/embed/s1UBEYBQ4OY" async="" */}
+            {/* <script src="https://www.youtube.com/s/desktop/c20c1e6c/jsbin/spf.vflset/spf.js" nonce="WnmGmZI14YHZRTruttRClA" class="js-httpswwwyoutubecomsdesktopc20c1e6cjsbinspfvflsetspfjs"></script> */}
+
+          WATCH TRAILER <i className='far fa-play-circle'
+            />
+          </Button>
         </Link>
       </div >
     </div >

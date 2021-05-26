@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowseRouter as Router, useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 import AuthService from "../services/auth.service";
 
@@ -59,14 +58,14 @@ function Navbar() {
                 Home
               </Link>
             </li> */}
-            {/* <li className='nav-item'>
+            <li className='nav-item'>
               <Link
                 to='/about'
                 className='nav-links'
                 onClick={closeMobileMenu}>
                 About
               </Link>
-            </li> */}
+            </li>
             <li className='nav-item'>
               <Link
                 to='/watersport-rentals-lessons'
@@ -103,7 +102,7 @@ function Navbar() {
                 Boat Tours/Water Taxi
               </Link>
             </li> */}
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link
                 to='/booking'
                 className='nav-links'
@@ -111,7 +110,7 @@ function Navbar() {
               >
                 Booking
               </Link>
-            </li>
+            </li> */}
             <li> 
               <Link
                 to='/Cart'
