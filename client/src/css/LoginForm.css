@@ -78,7 +78,7 @@ form .form-inner .form-group input {
     display: block;
     width: 100%;
     padding: 10px 15px;
-    background-color: #F8F8F8;
+    background-color: #d8d8d8;
     border-radius: 8px;
     transition: 0.4s;
    
@@ -92,7 +92,8 @@ form .form-inner input[type="submit"], .welcome button {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 8px;
-    background-image: linear-gradient(to right, #FFCE00 50%, #FFCE00 50%, #0000FF );
+    /* background-image: linear-gradient(to right, #a5a9ac 50%, ##a5a9ac 50%, #11BCC2 ); */
+    background-color: #11BCC2;
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
@@ -113,7 +114,7 @@ a.link-login:link, a.link-login:visited {
 }
 
 a.link-login:hover {
-    color: #0000FF;
+    color: #11BCC2;
 }
 
 .error {
@@ -123,15 +124,15 @@ a.link-login:hover {
     left: 100px;
 }
 
-.welcome {
+/* .welcome {
     width: 100%;
     max-width: 480px;
     background-color: #fff;
     padding: 15px 30px;
     box-shadow: 10px 10px 10px rgb(0 0 0 / 40%), 10px 10px 10px rgb(0 0 150 / 40%);
-}
+} */
 
-.welcome h2{
+/* .welcome h2{
     color: #888;
     font-size: 28px;
     font-weight: 500;
@@ -141,7 +142,7 @@ a.link-login:hover {
 .welcome h2 span {
     color: #FE4880;
     font-weight: 700;
-}
+} */
 
 
 
