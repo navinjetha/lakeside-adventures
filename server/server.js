@@ -7,6 +7,11 @@ const cors = require("cors");
 const dbConfig = require("./config/db.config");
 const { authJwt } = require("./middlewares");
 
+const stripe = require("stripe"(process.env.STRIPE_SECRET_TEST))
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 connectDB();
 const app = express();
@@ -17,11 +22,6 @@ var corsOptions = {
   
 app.use(cors(corsOptions));
   
-// // parse requests of content-type - application/json
-// app.use(bodyParser.json());
-
-// // parse requests of content-type - application/x-www-form-urlencoded
-// app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.json());
 

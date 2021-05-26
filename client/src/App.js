@@ -15,6 +15,7 @@ import Cart from './components/pages/Cart';
 import LoginForm from './components/LoginForm';
 import RegistrationForm from './components/RegistrationForm';
 import AuthService from "./services/auth.service";
+import StripeContainer from './components/StripeContainer';
 
 
 
@@ -23,6 +24,7 @@ function App() {
 
   const [user, setUser] = useState({name:"", email:""});
   const [error, setError] = useState("");
+  const [showItem, setShowItem] = useState(false);
 
   const signIn = (details, history) => {
     console.log(details);
@@ -74,6 +76,11 @@ function App() {
             <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route>  
         </Switch>
       </Router>
+      
+      <div>
+        {showItem ? <StripeContainer/> : <> <h3>$100.00</h3> <p>Watersport item</p> <button onClick={()=> {setShowItem(true)}}>Pay</button> </>}
+      </div>
+        
     </>
   );
 }
