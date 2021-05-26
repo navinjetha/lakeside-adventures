@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  background-color: #11bcc2;
 }
 
 .navbar-container {
@@ -93,7 +94,7 @@
   }
 
   .nav-menu.active {
-    background: rgb(17, 151, 204);
+    background: rgb(17, 151, 204); 
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
