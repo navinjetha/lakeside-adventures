@@ -12,7 +12,7 @@ function CartNavbar({ click }) {
         return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
     };
     return (
-        <nav className="navbar">
+        <nav className="cartnavbar">
             {/* logo */}
             <div className="navbar__logo">
                 <h2>Shopping Cart</h2>
