@@ -32,7 +32,7 @@ const ProductScreen = ({ match, history }) => {
         <>
           <div className="productscreen__left">
             <div className="left__image">
-              <img src={product.imageUrl} alt={product.name} margin="1rem" />
+              <img src={product.imageUrl} alt={product.name} margin="1rem" className="promo-image"/>
 
             </div>
             <div className="left__info">

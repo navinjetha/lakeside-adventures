@@ -20,7 +20,7 @@
   }
 
   .cartitem__image {
-    object-fit: contain;
+    /* object-fit: contain; */
     position: unset;
   }
   .cartItem__select {
@@ -59,10 +59,6 @@
     }
   } */
 
-  /* .cartitem__image {
-    object-fit: contain;
-    position: fixed;
-  } */
   
   /* @media (max-width: 700px) {
     .cartItem__name {

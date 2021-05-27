@@ -5,8 +5,8 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
     console.log("Item", item)
     return (
         <div className="cartitem">
-            <div className="cartitem__image">  
-                <img src={item.imageUrl} alt={item.name} />
+            <div className="cartitem__image" >  
+                <img src={item.imageUrl} alt={item.name} className="promo-image" />
             </div>
             <Link to={`/product/${item.product}`} className="cartItem__name">
                 <p>{item.name}</p>

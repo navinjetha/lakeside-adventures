@@ -12,7 +12,7 @@
 .left__image {
   margin: 1rem;
   flex: 0.3;
-  position: unset;
+  /* position: unset; */
 }
 
 .left__info {
