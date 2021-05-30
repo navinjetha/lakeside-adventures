@@ -10,40 +10,22 @@ function MyPricingTable() {
         <div className = 'pricingSlot'>
           <div className ='pricingDetail'>
             <PricingTable  highlightColor='#1976D2'>
-              <PricingSlot onClick={submit} buttonText='Shop Now' title='Lessons' >
-                <PricingDetail> Wake boarding / surfing </PricingDetail>
-                <PricingDetail> Water skiing </PricingDetail>
-                <PricingDetail> Up to three people</PricingDetail>
+              <PricingSlot onClick={submit}  title='Fishing Excursions' >
+                <PricingDetail> Up to six participants </PricingDetail>
+                <PricingDetail> Salmon, Trout, Walleye </PricingDetail>
+                <PricingDetail> Bait, equipment, and licenses</PricingDetail>
+                <PricingDetail> Custom and full day rates </PricingDetail>
+              </PricingSlot>
+              <PricingSlot  onClick={submit} title='Guided Hikes' >
+                <PricingDetail> Up to twelve participants </PricingDetail>
+                <PricingDetail> Visit a stunning waterfall </PricingDetail>
+                <PricingDetail> Light snaks provided </PricingDetail>
                 <PricingDetail> Custom and full day rates available</PricingDetail>
               </PricingSlot>
-              <PricingSlot  onClick={submit} buttonText='Shop Now' title='Jet Ski Rentals' >
-                <PricingDetail> Two riders per machine max </PricingDetail>
-                <PricingDetail> Our most high speed adventure </PricingDetail>
-                <PricingDetail> Life jackets provided </PricingDetail>
-                <PricingDetail> Custom and full day rates available</PricingDetail>
-              </PricingSlot>
-              <PricingSlot  onClick={submit} buttonText='Shop Now' title='Paddleboards' >
-                <PricingDetail> Great exercise</PricingDetail>
-                <PricingDetail> Paddles and life jackets included </PricingDetail>
-                <PricingDetail> We provide a brief introduction </PricingDetail>
-                <PricingDetail> Custom and full day rates available</PricingDetail>
-              </PricingSlot>
-              <PricingSlot  onClick={submit} buttonText='Shop Now' title='Kayaks' >
-                <PricingDetail> One and Two person available</PricingDetail>
-                <PricingDetail> Paddles and life jackets included </PricingDetail>
-                <PricingDetail> Great for fishing</PricingDetail>
-                <PricingDetail> Custom and full day rates available</PricingDetail>
-              </PricingSlot>
-              <PricingSlot  onClick={submit} buttonText='Shop Now' title='Inflatables' >
-                <PricingDetail> Bannana Boats</PricingDetail>
-                <PricingDetail> Tubing </PricingDetail>
-                <PricingDetail> Rafts</PricingDetail>
-                <PricingDetail> Custom and full day rates available</PricingDetail>
-              </PricingSlot>
-              <PricingSlot  onClick={submit} buttonText='Shop now' title='High Adrenaline Sports' >
-                <PricingDetail> Water skiing</PricingDetail>
-                <PricingDetail> Wake boarding </PricingDetail>
-                <PricingDetail> Wake surfing </PricingDetail>
+              <PricingSlot  onClick={submit}  title='Dinner Cruises' >
+                <PricingDetail> Up to twenty guests</PricingDetail>
+                <PricingDetail> Enjoy a beautiful sunset </PricingDetail>
+                <PricingDetail> Menu options to fit your budget </PricingDetail>
                 <PricingDetail> Custom and full day rates available</PricingDetail>
               </PricingSlot>
             </PricingTable>
