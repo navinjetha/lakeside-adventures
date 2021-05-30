@@ -7,11 +7,11 @@
 }
 
 input, button {
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
-    color: black;
+    /* appearance: none; */
+    /* background: none; */
+    /* border: none; */
+    /* outline: none; */
+    /* color: black; */
     
 }
 
@@ -123,6 +123,23 @@ a.link-login:hover {
     top: 165px;
     left: 100px;
 }
+
+.cartItem__deleteBtn {
+    appearance: auto;
+    padding: 10px 17px;
+    color: red;
+    /* background: #f4f4f4; */
+    border: 1px solid #171717;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  .cartItem__deleteBtn:hover,
+  .carItem__deleteBtn:active,
+  .carItem__deleteBtn:focus {
+    background: #171717;
+    transform: scale(1.2);
+  }
 
 /* .welcome {
     width: 100%;

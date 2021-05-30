@@ -7,7 +7,7 @@ function AboutTopContainer() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <object data='https://www.youtube.com/embed/s1UBEYBQ4OY'
-              width='600px' height='400px' align='left'>
+              width='800px' height='400px' align='left'>
             </object>
           </ul>
         </div>

@@ -11,7 +11,7 @@ const Product = ({ imageUrl, description, price, name, productId }) => {
             {/* <img src={imageUrl} alt={name} /> */}
             <style></style>
             <div className="product__info">
-                <img src={imageUrl} alt={name} className="promo-image"/>
+                <img src={imageUrl} alt={name} className="prod-image"/>
                 <p className="info__name">{name}</p>
                 <p className="info__description">{description.substring(0, 100)}...</p>
                 <p className="info__price">${price}</p>

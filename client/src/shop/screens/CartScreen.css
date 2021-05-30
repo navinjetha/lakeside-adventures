@@ -43,14 +43,16 @@
   .cartscreen__right div button {
     padding: 10px 17px;
     width: 100%;
-    background: #171717;
+    background: #11BCC2;
     color: #f4f4f4;
-    border: 1px solid #171717;
+    border: 1px solid #11bcc2;
     cursor: pointer;
   }
   
   .cartscreen__right div button:hover {
     opacity: 0.9;
+    /* background: #11BCC2; */
+    /* color: #f4f4f4; */
   }
   
   /* @media (max-width: 1320px) {
