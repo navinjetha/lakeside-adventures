@@ -37,7 +37,7 @@ function Cards() {
             />
             <CardItem
               src='/images\changhui-lee-WXmilRe_1Jg-unsplash.jpg'
-              text='Fun and Exciting Water Sport Lessons'
+              text='Fun and Exciting Water Adventure Packages'
               label='Jet Skis'
               path='/adventure-packages'
             />
