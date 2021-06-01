@@ -7,10 +7,6 @@ const cors = require("cors");
 const dbConfig = require("./config/db.config");
 const { authJwt } = require("./middlewares");
 
-const stripe = require("stripe")(process.env.STRIPE_SECRET_TEST)
-
-
-
 connectDB();
 const app = express();
 
@@ -24,7 +20,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/payment", cors(), async (req, res) => {
+  const stripe = require("stripe")(process.env.STRIPE_SECRET_TEST)
+  console.log('stripe', stripe)
   let {amount, id} = req.body
+  console.log('amount', amount)
   try {
     const payment = await stripe.paymentIntents.create({
       amount,

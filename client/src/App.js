@@ -16,6 +16,7 @@ import LoginForm from './components/LoginForm';
 import RegistrationForm from './components/RegistrationForm';
 import AuthService from "./services/auth.service";
 import StripeContainer from './components/StripeContainer';
+import './css/stripe.css';
 
 
 
@@ -49,7 +50,6 @@ function App() {
       details.password
     ).then(
       response => {
-        // history.push("/welcome")
         history.push("/login")
       },
       error => {
@@ -76,11 +76,6 @@ function App() {
             <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route>  
         </Switch>
       </Router>
-      
-      <div>
-        {showItem ? <StripeContainer/> : <> <h3>$100.00</h3> <p>Watersport item</p> <button onClick={()=> {setShowItem(true)}}>Pay</button> </>}
-      </div>
-        
     </>
   );
 }
