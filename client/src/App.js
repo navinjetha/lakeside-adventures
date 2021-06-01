@@ -18,8 +18,8 @@ import AuthService from "./services/auth.service";
 
 
 
-function App() {
 
+function App() {
 
   // const [user, setUser] = useState({name:"", email:""});
   const [error, setError] = useState("");
@@ -71,7 +71,7 @@ function App() {
           {/* <Route path='/sign-up' component={SignUp} /> */}
           <Route exact path='/cart' component={Cart} />
           <Route exact path = "/login"><LoginForm  signIn={signIn} error={error}/></Route>
-            <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route>  
+          <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route> 
         </Switch>
       </Router>
     </>
