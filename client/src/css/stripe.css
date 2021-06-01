@@ -104,7 +104,7 @@ to {
 }
 }
 .FormRowInput:-webkit-autofill {
--webkit-text-fill-color: #fce883;
+/* -webkit-text-fill-color: #fce883; */
 /* Hack to hide the default webkit autofill */
 transition: background-color 100000000s;
 animation: 1ms void-animation-out;
@@ -117,6 +117,7 @@ padding: 11px 15px 11px 0;
 color: rgb(65, 70, 91);
 background-color: transparent;
 animation: 1ms void-animation-out;
+border-style: none;
 }
 
 .FormRowInput::placeholder {
@@ -147,6 +148,7 @@ font-weight: 600;
 cursor: pointer;
 transition: all 100ms ease-in-out;
 will-change: transform, background-color, box-shadow;
+border-style: none;
 }
 
 .SubmitButton:active {
@@ -166,7 +168,7 @@ transform: scale(0.99) translateY(15px);
 .SubmitButton:disabled {
 opacity: 0.5;
 cursor: default;
-background-color: #7795f8;
+/* background-color: #7795f8; */
 box-shadow: none;
 }
 
@@ -198,16 +200,16 @@ animation: fade 200ms ease-out;
 }
 
 .ResultTitle {
-color: #fff;
+color: #11BCC2;
 font-weight: 500;
 margin-bottom: 8px;
-font-size: 17px;
+font-size: 27px;
 text-align: center;
 }
 
 .ResultMessage {
-color: #9cdbff;
-font-size: 14px;
+color: #11BCC2;
+font-size: 24px;
 font-weight: 400;
 margin-bottom: 25px;
 line-height: 1.6em;

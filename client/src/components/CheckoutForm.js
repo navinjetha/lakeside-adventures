@@ -20,8 +20,9 @@ const CARD_OPTIONS = {
   iconStyle: "solid",
   style: {
     base: {
-      iconColor: "#c4f0ff",
-      color: "#fff",
+      // iconColor: "#c4f0ff",
+      // color: "#fff",
+      color: "rgb(65, 70, 91)",
       fontWeight: 500,
       fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
       fontSize: "16px",
@@ -203,13 +204,13 @@ const CheckoutForm = (props) => {
   return paymentMethod ? (
     <div className="Result">
       <div className="ResultTitle" role="alert">
-        Payment successful
+        Payment successful!
       </div>
-      <div className="ResultMessage">
-        Thanks for trying Stripe Elements. No money was charged, but we
-        generated a PaymentMethod: {paymentMethod.id}
+       <div className="ResultMessage">
+         {/* {paymentMethod.id} */}
+         We hope you will enjoy your lakeside adventure! 
       </div>
-      <ResetButton onClick={reset} />
+      {/* <ResetButton onClick={reset} /> */}
     </div>
   ) : (
     <form className="Form" onSubmit={handleSubmit}>
