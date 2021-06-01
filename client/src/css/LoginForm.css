@@ -81,7 +81,7 @@ form.auth .form-inner .form-group input {
     background-color: #d8d8d8;
     border-radius: 8px;
     transition: 0.4s;
-   
+    border-style: none;
 }
 
 form.auth .form-inner .form-group input:focus {
@@ -100,6 +100,7 @@ form.auth .form-inner input[type="submit"], .welcome button {
     color: #FFF;
     font-weight: 700;
     cursor: pointer;
+    border-style: none;
 }
 
 form.auth .form-inner input[type="submit"]:hover, .welcome button:hover {

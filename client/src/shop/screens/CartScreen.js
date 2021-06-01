@@ -22,6 +22,14 @@ const CartScreen = () => {
         dispatch(removeFromCart(id));
     }
 
+    const clearCart = () => {
+        debugger;
+        return cartItems.forEach(element => {
+            debugger;
+            removeHandler(element.product)
+        });
+    }
+
     const getCartCount = () => {
         return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
     };
@@ -34,8 +42,12 @@ const CartScreen = () => {
 
     const onCheckoutCompleted = (payment) => {
         // empty cart, set payment to null, 
-        // show payment statue message and redirect
+        // show payment status message and redirect
         // setPayment(false)
+        setPayment(false);  
+        debugger
+        clearCart();
+        debugger;
     }
 
     const proccedToCheckout = () => {
