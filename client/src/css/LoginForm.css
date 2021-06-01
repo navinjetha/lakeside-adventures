@@ -23,12 +23,12 @@ input, button {
     background-color: #a5a9ac;
 }
 
-form {
-    display: block;
+form.auth {
+    /* display: block; */
     position: relative;
 }
 
-form:after {
+form.auth:after {
     content: '';
     display: block;
     position: absolute;
@@ -40,7 +40,7 @@ form:after {
     /* background-image: linear-gradient(to bottom right, #FFCE00, #0000FF); */
 }
 
-form .form-inner {
+form.auth .form-inner {
     position: relative;
     display: block;
     background-color: #FFF;
@@ -49,14 +49,14 @@ form .form-inner {
     box-shadow: 10px 10px 10px rgb(0 0 0 / 40%), 10px 10px 10px rgb(0 0 150 / 40%);
 }
 
-form .form-inner h2 {
+form.auth .form-inner h2 {
     color: #888;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
-form .form-inner .form-group {
+form.auth .form-inner .form-group {
     display: block;
     width: 300px;
     margin-bottom: 15px;
@@ -74,7 +74,7 @@ form .form-inner .form-group {
     color: #FE4880
 }
 
-form .form-inner .form-group input {
+form.auth .form-inner .form-group input {
     display: block;
     width: 100%;
     padding: 10px 15px;
@@ -84,11 +84,11 @@ form .form-inner .form-group input {
    
 }
 
-form .form-inner .form-group input:focus {
+form.auth .form-inner .form-group input:focus {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
-form .form-inner input[type="submit"], .welcome button {
+form.auth .form-inner input[type="submit"], .welcome button {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 8px;
@@ -102,7 +102,7 @@ form .form-inner input[type="submit"], .welcome button {
     cursor: pointer;
 }
 
-form .form-inner input[type="submit"]:hover, .welcome button:hover {
+form.auth .form-inner input[type="submit"]:hover, .welcome button:hover {
     background-position: 100% 0%;
 }
 

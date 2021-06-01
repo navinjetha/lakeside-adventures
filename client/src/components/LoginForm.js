@@ -13,7 +13,7 @@ function LoginForm({ signIn, error }) {
     }
 
     return (
-        <form className="form-outer" onSubmit={submitHandler} >
+        <form className="auth form-outer" onSubmit={submitHandler} >
             <div className="form-inner">
                 <h2>Login</h2>
                 { (error != "") ? ( <div className="error">{error}</div>) : "" }
@@ -35,3 +35,4 @@ function LoginForm({ signIn, error }) {
 };
 
 export default LoginForm;
+

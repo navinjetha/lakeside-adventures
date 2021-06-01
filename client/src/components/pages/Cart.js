@@ -11,7 +11,7 @@ export default function Cart() {
       <React.StrictMode>
         <CartApp />
       </React.StrictMode>
-      </Provider>,
+      </Provider>
       
     </div>
   )

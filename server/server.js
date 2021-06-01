@@ -7,7 +7,6 @@ const cors = require("cors");
 const dbConfig = require("./config/db.config");
 const { authJwt } = require("./middlewares");
 
-
 connectDB();
 const app = express();
 
@@ -17,11 +16,37 @@ var corsOptions = {
   
 app.use(cors(corsOptions));
   
-// // parse requests of content-type - application/json
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// // parse requests of content-type - application/x-www-form-urlencoded
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.post("/payment", cors(), async (req, res) => {
+  const stripe = require("stripe")(process.env.STRIPE_SECRET_TEST)
+  console.log('stripe', stripe)
+  let {amount, id} = req.body
+  console.log('amount', amount)
+  try {
+    const payment = await stripe.paymentIntents.create({
+      amount,
+      currency: "CAD",
+      description: "Watersport activity",
+      payment_method: id,
+      confirm: true
+    })
+
+    console.log("Payment", payment)
+    res.json({
+      message:"Payment successful",
+      success: true
+    })
+
+  } catch (error) {
+    console.log("Error", error)
+    res.json({
+      message:"Payment failed",
+      success: false
+    })
+  }
+})
 
 app.use(express.json());
 

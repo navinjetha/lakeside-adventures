@@ -15,6 +15,9 @@ import Cart from './components/pages/Cart';
 import LoginForm from './components/LoginForm';
 import RegistrationForm from './components/RegistrationForm';
 import AuthService from "./services/auth.service";
+import StripeContainer from './components/StripeContainer';
+import './css/stripe.css';
+import MyPricingTable from './components/MyPricingTable';
 
 
 
@@ -23,6 +26,7 @@ function App() {
 
   // const [user, setUser] = useState({name:"", email:""});
   const [error, setError] = useState("");
+  const [showItem, setShowItem] = useState(false);
 
   const signIn = (details, history) => {
     console.log(details);
@@ -47,7 +51,6 @@ function App() {
       details.password
     ).then(
       response => {
-        // history.push("/welcome")
         history.push("/login")
       },
       error => {
