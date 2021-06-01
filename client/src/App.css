@@ -3,8 +3,10 @@
   /* margin: 0;
   padding: 0; 
   color: white; */
-  font-family: 'PT Sans', sans-serif; 
+  font-family: 'PT Sans', sans-serif;
+  position: relative;
 }
+
 
 .home,
 .about,
@@ -76,14 +78,14 @@
   font-size: 100px;
 }
 
-.sign-up {
+/* .sign-up {
   background-image: url('/images/img-8.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
 /* .cart {
   background-image: url('/images/img-1.jpg');

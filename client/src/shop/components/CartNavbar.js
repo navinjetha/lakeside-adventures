@@ -36,11 +36,11 @@ function CartNavbar({ click }) {
 
 
             {/* hamburger menu */}
-            <div className="hamburger__menu" onClick={click}>
+            {/* <div className="hamburger__menu" onClick={click}> */}
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            {/* </div> */}
         </nav>
     )
 }

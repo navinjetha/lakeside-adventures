@@ -3,18 +3,11 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 import './Button.css'
-import { Link, useHistory, Redirect } from 'react-router-dom';
+// import { Link, useHistory, Redirect } from 'react-router-dom';
 // import Cart from './pages/Cart';
 // import HomeScreen from '../shop/screens/HomeScreen';
 
 function HeroSection() {
-
-  const history = useHistory();
-
-  
-  // function RedirectToLocation(){
-  //  window.location.href='http://localhost:30000/About';
-  // }
 
   return (
     <div className='hero-container'>
@@ -27,21 +20,22 @@ function HeroSection() {
             className='btns'
             buttonStyle='btn--outline'
             buttonSize='btn--large'
-            linkProperty='/about'
+            linkProperty='/watersport-rentals-lessons'
           >
             GET STARTED
         </Button>
         {/* </Link> */}
-        <Link to='/about' className='btn-mobile'>
+        {/* <Link to='/about' className='btn-mobile'> */}
           <Button
             className='btns'
             buttonStyle='btn--primary'
             buttonSize='btn--large'
+            linkProperty='/about'
           >
           WATCH TRAILER <i className='far fa-play-circle'
             />
           </Button>
-        </Link>
+        {/* </Link> */}
       </div >
     </div >
   );

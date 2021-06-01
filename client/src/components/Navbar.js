@@ -68,14 +68,14 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/watersport-rentals-lessons'
+                to='/adventure-packages'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Watersport Rentals & Lessons
+                Adventure Packages
               </Link>
             </li>
-             {/* <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link
                 to='/adventure-packages'
                 className='nav-links'
@@ -111,7 +111,7 @@ function Navbar() {
                 Booking
               </Link>
             </li> */}
-            <li> 
+            <li>
               <Link
                 to='/Cart'
                 className='nav-links'
@@ -120,9 +120,19 @@ function Navbar() {
                 Cart
               </Link>
             </li>
+            <li>
+              <Link
+                to='/login'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                {button && !user && <Button buttonStyle='btn--outline' onClick={onClickLogin}>SIGN IN</Button>}
+                {button && user && <Button buttonStyle='btn--outline' onClick={onClickLogout}>LOG OUT</Button>}
+              </Link>
+            </li>
           </ul>
-          {button && !user && <Button buttonStyle='btn--outline' onClick={onClickLogin}>SIGN IN</Button>}
-          {button && user && <Button buttonStyle='btn--outline' onClick={onClickLogout}>LOG OUT</Button>}
+          {/* {button && !user && <Button buttonStyle='btn--outline' onClick={onClickLogin}>SIGN IN</Button>} */}
+          {/* {button && user && <Button buttonStyle='btn--outline' onClick={onClickLogout}>LOG OUT</Button>} */}
         </div>
       </nav>
     </>
