@@ -1,5 +1,5 @@
 .product {
-    width: 300px;
+    /* width: 300px; */
     padding: 1rem;
     background: #fff;
     cursor: pointer;
@@ -12,12 +12,13 @@
   }
   
   .product > img {
-    width: 100%;
-    height: 170px;
+    /* width: 100%; */
+    height: unset;
+    /* position: unset; */
     object-fit: contain;
     border-radius: 8px;
   }
-  
+  /* note changed object-fit from contain */
   .product__info > p {
     margin-bottom: 8px;
   }
@@ -37,18 +38,18 @@
   
   .info__button {
     display: block;
-    text-decoration: none;
+    text-decoration: #11BCC2;
     text-align: center;
-    color: #171717;
+    color: #11BCC2;
     width: 100%;
     padding: 8px 16px;
     background-color: #f4f4f4;
-    border: 1px solid #171717;
+    border: 1px solid #11bcc2;
     font-size: 1rem;
   }
   
   .info__button:hover {
-    background: #171717;
+    background: #11BCC2;
     color: #f4f4f4;
   }
   

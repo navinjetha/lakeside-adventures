@@ -11,15 +11,16 @@
 
 .left__image {
   margin: 1rem;
-  flex: 0.6;
-  
+  flex: 0.3;
+  height: 200px;
+  /* position: unset; */
 }
 
 .left__info {
   margin: 1rem;
-  flex: 0.4;
-  background: rgb(138, 201, 226);
-  height: fit-content;
+  flex: 0.8;
+  background: white;
+  height: auto;
   font-size: 0.9rem;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .right__info {
-  width: 250px;
+  /* width: 250px; */
   margin: 1rem;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
@@ -61,11 +62,16 @@
   grid-column: 1/-1;
   width: 100%;
   padding: 10px 16px;
-  background: #171717;
-  color: #f4f4f4;
-  border: 1px solid #171717;
+  background: #f4f4f4;
+  color: #11bcc2;
+  border: 1px solid #11BCC2;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.right__info p > button:hover {
+  background: #11BCC2;
+  color: #f4f4f4;
 }
 
 .right__info select {

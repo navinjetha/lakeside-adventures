@@ -5,42 +5,41 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Water Sports!</h1>
+      <h1>Check out these EPIC Water Adventures!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
               src='images/Kneeboarding.jpg'
-              text='Click and Experience Our Jaw Dropping Adventure Packages!'
+              text='Jaw Dropping Adventure Packages!'
               label='Kneeboarding'
-              path='/watersport-rentals-lessons'
+              path='/adventure-packages'
             />
             <CardItem
-              src='./images/Joanne-Surf-Smile.jpg'
-              text='Click and Experience Our EPIC Watersports!'
+              src='/images\ben-douglas-ODTVdNcrUW0-unsplash.jpg'
+              text='Water Surfing Adventures for your whole family! '
               label='Wake Surfing'
-              path='/watersport-rentals-lessons'
+              path='/adventure-packages'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images//Girl-Tubing-moc.jpg'
-              text='Click and Rent Our Water Sport Equipment and Have a Blast!'
-              label='Adventure'
+              src='/images\patrik-velich-GRSxyDKtlSM-unsplash.jpg'
+              text='Experience Tubing on Adrenaline!'
               label='Tubing'
-              path='/watersport-rentals-lessons'
+              path='/adventure-packages'
             />
             <CardItem
-              src='images/Group-with-Raft.jpg'
-              text='Click and Experience Our Summer Camps'
+              src='/images\tim-mossholder-z5KNIclCxPM-unsplash.jpg'
+              text='Join Us for an EPIC Group Adventure!'
               label='Rafting'
-              path='/watersport-rentals-lessons'
+              path='/adventure-packages'
             />
             <CardItem
-              src='images/Jet-Ski-Group.jpg'
-              text='Fun and Exciting Water Sport Lessons'
+              src='/images\changhui-lee-WXmilRe_1Jg-unsplash.jpg'
+              text='Fun and Exciting Water Adventure Packages'
               label='Jet Skis'
-              path='/watersport-rentals-lessons'
+              path='/adventure-packages'
             />
           </ul>
         </div>

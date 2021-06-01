@@ -17,13 +17,14 @@ import RegistrationForm from './components/RegistrationForm';
 import AuthService from "./services/auth.service";
 import StripeContainer from './components/StripeContainer';
 import './css/stripe.css';
+import MyPricingTable from './components/MyPricingTable';
+
 
 
 
 function App() {
 
-
-  const [user, setUser] = useState({name:"", email:""});
+  // const [user, setUser] = useState({name:"", email:""});
   const [error, setError] = useState("");
   const [showItem, setShowItem] = useState(false);
 
@@ -71,9 +72,9 @@ function App() {
           <Route path='/boattours-watertaxi' component={BoatToursAndWaterTaxi} />
           <Route path='/booking' component={Booking} />
           {/* <Route path='/sign-up' component={SignUp} /> */}
-          <Route path='/cart' component={Cart} />
+          <Route exact path='/cart' component={Cart} />
           <Route exact path = "/login"><LoginForm  signIn={signIn} error={error}/></Route>
-            <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route>  
+          <Route path = "/register"><RegistrationForm signUp={signUp} error={error}/></Route> 
         </Switch>
       </Router>
     </>

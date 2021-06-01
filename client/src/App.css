@@ -1,10 +1,12 @@
 * {
-  /* box-sizing: border-box;
-  margin: 0;
-  padding: 0; */
-  /* color: white; */
-  font-family: 'PT Sans', sans-serif; 
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; 
+  color: white; */
+  font-family: 'PT Sans', sans-serif;
+  position: relative;
 }
+
 
 .home,
 .about,
@@ -16,7 +18,7 @@
 .sign-up
  {
   display: flow-root;
-  height: 90vh;
+  height: 60vh;
   align-items: center;
   justify-content: center;
   font-style: italic;
@@ -76,14 +78,14 @@
   font-size: 100px;
 }
 
-.sign-up {
+/* .sign-up {
   background-image: url('/images/img-8.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
 /* .cart {
   background-image: url('/images/img-1.jpg');

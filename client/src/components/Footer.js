@@ -35,8 +35,8 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>         
-            <Link to='/'>phone number goes here</Link>
-            <Link to='/'>Email address goes here</Link>
+            <Link to='/'>403-555-5555</Link>
+            <Link to='/'>info@lakeside-adventures.com</Link>
             {/* <Link to='/'>Destinations</Link> */}
             </div>
         </div>
@@ -49,22 +49,22 @@ function Footer() {
             <Link to='/'>Influencer</Link>
           </div> */}
           <div class='footer-link-items'>
-            {/* <h2>Social Media</h2>
+            <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link> */}
+            <Link to='/'>Twitter</Link>
           </div>
         </div>
       </div>
       <section class='social-media'>
         <div class='social-media-wrap'>
-          <div class='footer-logo'>
+           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              Lakeside
+              Lakeside Adventures
               {/* <i class='fab fa-typo3' /> */}
             </Link>
-          </div>
+          </div> 
           <small class='website-rights'>Lakeside Adventures © 2021</small>
           <div class='social-icons'>
             <Link

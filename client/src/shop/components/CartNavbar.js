@@ -12,7 +12,7 @@ function CartNavbar({ click }) {
         return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
     };
     return (
-        <nav className="navbar">
+        <nav className="cartnavbar">
             {/* logo */}
             <div className="navbar__logo">
                 <h2>Shopping Cart</h2>
@@ -36,11 +36,11 @@ function CartNavbar({ click }) {
 
 
             {/* hamburger menu */}
-            <div className="hamburger__menu" onClick={click}>
+            {/* <div className="hamburger__menu" onClick={click}> */}
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            {/* </div> */}
         </nav>
     )
 }

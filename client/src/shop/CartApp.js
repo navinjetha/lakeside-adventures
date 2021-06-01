@@ -1,6 +1,6 @@
 
 import './CartApp.css';
-import React, { useState } from "react"
+import React, {useState} from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 // Pages
@@ -19,8 +19,8 @@ function CartApp() {
     <Router>
     <CartNavbar click={() => setSidetoggle(true)}/>
     {/* <SideDrawer show={sideToggle} click={() => setSidetoggle(false)}/> */}
-    {/* <Backdrop show={sideToggle} click={() => setSidetoggle(false)}/> */} 
-      <main className="catapp">
+    {/* <Backdrop show={sideToggle} click={() => setSidetoggle(false)}/>  */}
+      <main className="cartapp">
         <Switch>
           <Route exact path='/' component={HomeScreen} />
           <Route exact path='/product/:id' component={ProductScreen} />
