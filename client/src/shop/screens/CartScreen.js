@@ -25,7 +25,6 @@ const CartScreen = () => {
     const clearCart = () => {
         debugger;
         return cartItems.forEach(element => {
-            debugger;
             removeHandler(element.product)
         });
     }
@@ -45,9 +44,7 @@ const CartScreen = () => {
         // show payment status message and redirect
         // setPayment(false)
         setPayment(false);  
-        debugger
         clearCart();
-        debugger;
     }
 
     const proccedToCheckout = () => {
