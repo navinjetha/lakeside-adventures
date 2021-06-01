@@ -15,7 +15,6 @@ import Cart from './components/pages/Cart';
 import LoginForm from './components/LoginForm';
 import RegistrationForm from './components/RegistrationForm';
 import AuthService from "./services/auth.service";
-import MyPricingTable from './components/MyPricingTable';
 
 
 
