@@ -22,15 +22,24 @@
   }
 
   .prod-image {
-    height: 250px;
+    height: 350px;
+    width: 300px;
     position: unset;
     object-fit: unset;
     margin: 1rem;
     flex: 0.3;
   }
 
+
+   /* .delete-cart-button {
+      -webkit-appearance: auto;
+      -moz-appearance:    unset;
+      appearance: unset;
+   }  */
+
+
   /* .cartItem__deleteBtn {
-    appearance: auto;
+    appearance: unset;
     padding: 10px 17px;
     color: red;
     background: #f4f4f4;

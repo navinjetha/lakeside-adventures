@@ -3,7 +3,8 @@
     padding: 1rem;
     background: #fff;
     cursor: pointer;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 4px #11BCC2; 
+    /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); */
     margin: 8px auto;
     display: flex;
     flex-direction: column;

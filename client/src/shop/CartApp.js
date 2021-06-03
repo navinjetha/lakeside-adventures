@@ -13,6 +13,15 @@ import CartNavbar from './components/CartNavbar'
 // import Backdrop from './components/Backdrop'
 // import SideDrawer from './components/SideDrawer'
 
+// fontawesome icons 
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { faTrash } from '@fortawesome/free-solid-svg-icons'
+// import {faTrash} from 'react-icons/fa'
+
+
+// library.add(faTrash)
+
+
 function CartApp() {
   const [sideToggle, setSidetoggle] = useState(false)
   return (

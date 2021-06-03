@@ -10,13 +10,13 @@ import SummerCamp from './components/pages/SummerCamp';
 import BoatToursAndWaterTaxi from './components/pages/BoatToursAndWaterTaxi';
 import Booking from './components/pages/Booking';
 
+
 // import SignUp from './components/pages/SignUp';
 import Cart from './components/pages/Cart';
 import LoginForm from './components/LoginForm';
 import RegistrationForm from './components/RegistrationForm';
 import AuthService from "./services/auth.service";
 import MyPricingTable from './components/MyPricingTable';
-
 
 
 function App() {

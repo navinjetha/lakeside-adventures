@@ -27,20 +27,28 @@
     padding: 10px 17px;
   }
   
-  /* .cartItem__deleteBtn {
-    appearance: auto;
+
+  /* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+const element = <FontAwesomeIcon icon={faCoffee} /> */
+
+  .cartItem__deleteBtn {
     padding: 10px 17px;
     color: red;
     background: #f4f4f4;
-    border: 1px solid #171717;
+    border: 1px solid red;
+    text-size-adjust: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    size: initial;
+
   }
   
-  .cartItem__deleteBtn:hover,
+  /* .cartItem__deleteBtn:hover,
   .carItem__deleteBtn:active,
   .carItem__deleteBtn:focus {
-    background: #171717;
+    background: #11BCC2;
     transform: scale(1.2);
   } */
   

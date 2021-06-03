@@ -126,6 +126,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
+
                 {button && !user && <Button buttonStyle='btn--outline' onClick={onClickLogin}>SIGN IN</Button>}
                 {button && user && <Button buttonStyle='btn--outline' onClick={onClickLogout}>LOG OUT</Button>}
               </Link>
