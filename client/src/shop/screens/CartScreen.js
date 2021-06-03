@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CartItem from '../components/CartItem'
 import './CartScreen.css'
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom"
 import { addToCart, removeFromCart } from '../redux/actions/cartActions'
+import StripeContainer from '../../components/StripeContainer'
 
 const CartScreen = () => {
+    const [payment, setPayment] = useState();
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart);
     const { cartItems } = cart;
+
+    
 
     const qtyChangeHandler = (id, qty) => {
         dispatch(addToCart(id, qty));
@@ -16,6 +20,13 @@ const CartScreen = () => {
 
     const removeHandler = (id) => {
         dispatch(removeFromCart(id));
+    }
+
+    const clearCart = () => {
+        debugger;
+        return cartItems.forEach(element => {
+            removeHandler(element.product)
+        });
     }
 
     const getCartCount = () => {
@@ -28,8 +39,24 @@ const CartScreen = () => {
             .toFixed(2);
     };
 
-    return (
-        <div className="cartscreen">
+    const onCheckoutCompleted = (payment) => {
+        // empty cart, set payment to null, 
+        // show payment status message and redirect
+        // setPayment(false)
+        setPayment(false);  
+        clearCart();
+    }
+
+    const proccedToCheckout = () => {
+        setPayment({
+            'amount': getCartSubTotal()
+        }) 
+    }
+
+    return <div>
+        {payment 
+            ? <StripeContainer payment={payment} onComplete={onCheckoutCompleted}/> 
+            : (<div className="cartscreen">
             <div className="cartscreen__left">
                 <h2>Shopping Cart</h2>
                 {cartItems.length === 0 ? (
@@ -54,11 +81,14 @@ const CartScreen = () => {
                     <p>{getCartSubTotal()}</p>
                 </div>
                 <div>
-                    <button>Proceed To Checkout</button>
+                    <button onClick={proccedToCheckout}>Proceed To Checkout</button>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+                    }
+    </div>
+    
+    
 }
 
 export default CartScreen

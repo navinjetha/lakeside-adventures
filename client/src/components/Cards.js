@@ -13,13 +13,13 @@ function Cards() {
               src='images/Kneeboarding.jpg'
               text='Jaw Dropping Adventure Packages!'
               label='Kneeboarding'
-              path='/adventure-packages'
+              path='/cart'
             />
             <CardItem
               src='/images\ben-douglas-ODTVdNcrUW0-unsplash.jpg'
               text='Water Surfing Adventures for your whole family! '
               label='Wake Surfing'
-              path='/adventure-packages'
+              path='/cart'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,19 +27,19 @@ function Cards() {
               src='/images\patrik-velich-GRSxyDKtlSM-unsplash.jpg'
               text='Experience Tubing on Adrenaline!'
               label='Tubing'
-              path='/adventure-packages'
+              path='/cart'
             />
             <CardItem
               src='/images\tim-mossholder-z5KNIclCxPM-unsplash.jpg'
               text='Join Us for an EPIC Group Adventure!'
               label='Rafting'
-              path='/adventure-packages'
+              path='/cart'
             />
             <CardItem
               src='/images\changhui-lee-WXmilRe_1Jg-unsplash.jpg'
               text='Fun and Exciting Water Adventure Packages'
               label='Jet Skis'
-              path='/adventure-packages'
+              path='/cart'
             />
           </ul>
         </div>

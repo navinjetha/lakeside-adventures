@@ -13,13 +13,13 @@ function MyPricingTable() {
               <PricingSlot onClick={submit}  title='Fishing Excursions' >
                 <PricingDetail> Up to six participants </PricingDetail>
                 <PricingDetail> Salmon, Trout, Walleye </PricingDetail>
-                <PricingDetail> Bait, equipment, and licenses</PricingDetail>
+                <PricingDetail> Bait, equipment, and licenses included</PricingDetail>
                 <PricingDetail> Custom and full day rates </PricingDetail>
               </PricingSlot>
               <PricingSlot  onClick={submit} title='Guided Hikes' >
                 <PricingDetail> Up to twelve participants </PricingDetail>
                 <PricingDetail> Visit a stunning waterfall </PricingDetail>
-                <PricingDetail> Light snaks provided </PricingDetail>
+                <PricingDetail> Light snacks provided </PricingDetail>
                 <PricingDetail> Custom and full day rates available</PricingDetail>
               </PricingSlot>
               <PricingSlot  onClick={submit}  title='Dinner Cruises' >
